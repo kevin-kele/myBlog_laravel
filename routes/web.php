@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,5 +13,4 @@ use App\Http\Controllers\ArticlesController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::resource('articles',ArticlesController::class);
+Route::get('/',[MainController::class,'home']);
