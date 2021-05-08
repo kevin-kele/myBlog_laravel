@@ -11,6 +11,8 @@ class MainController extends Controller
     {
         return view('home');
     }
+
+    
     public function index()
     {
         $articles = Article::paginate(4);

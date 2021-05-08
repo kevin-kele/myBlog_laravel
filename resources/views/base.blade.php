@@ -7,11 +7,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" >
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
-    <title>Hello, world!</title>
+    <title>My blog</title>
   </head>
   <body>
     @include('incs.navbar')
+
+    <div class="container justify-content-center mt-3">
+      @include('incs.flash')
+    </div>
+    
+    
     @yield('content')
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
